@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE2083642D326DAC002ECC3B /* FolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2083632D326DAC002ECC3B /* FolderViewModel.swift */; };
+		FE2083662D326E50002ECC3B /* FolderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2083652D326E50002ECC3B /* FolderCollectionViewCell.swift */; };
+		FE2083682D32FC88002ECC3B /* FolderColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2083672D32FC88002ECC3B /* FolderColors.swift */; };
+		FE20836A2D33089A002ECC3B /* FolderContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2083692D33089A002ECC3B /* FolderContentsViewController.swift */; };
+		FE20836C2D343047002ECC3B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE20836B2D343047002ECC3B /* CoreDataStack.swift */; };
 		FE40379F2D312412008D4D0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE40379E2D312412008D4D0D /* AppDelegate.swift */; };
 		FE4037A12D312412008D4D0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4037A02D312412008D4D0D /* SceneDelegate.swift */; };
 		FE4037A32D312412008D4D0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4037A22D312412008D4D0D /* ViewController.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE2083632D326DAC002ECC3B /* FolderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewModel.swift; sourceTree = "<group>"; };
+		FE2083652D326E50002ECC3B /* FolderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE2083672D32FC88002ECC3B /* FolderColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderColors.swift; sourceTree = "<group>"; };
+		FE2083692D33089A002ECC3B /* FolderContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderContentsViewController.swift; sourceTree = "<group>"; };
+		FE20836B2D343047002ECC3B /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		FE40379B2D312412008D4D0D /* OfflineFilesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfflineFilesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE40379E2D312412008D4D0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE4037A02D312412008D4D0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +47,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE2083602D326B5D002ECC3B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FE2083632D326DAC002ECC3B /* FolderViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FE2083612D326B67002ECC3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE4037A22D312412008D4D0D /* ViewController.swift */,
+				FE2083692D33089A002ECC3B /* FolderContentsViewController.swift */,
+				FE2083652D326E50002ECC3B /* FolderCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE2083622D326B71002ECC3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE2083672D32FC88002ECC3B /* FolderColors.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FE4037922D312412008D4D0D = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +94,10 @@
 			children = (
 				FE40379E2D312412008D4D0D /* AppDelegate.swift */,
 				FE4037A02D312412008D4D0D /* SceneDelegate.swift */,
-				FE4037A22D312412008D4D0D /* ViewController.swift */,
+				FE20836B2D343047002ECC3B /* CoreDataStack.swift */,
+				FE2083622D326B71002ECC3B /* Model */,
+				FE2083612D326B67002ECC3B /* View */,
+				FE2083602D326B5D002ECC3B /* ViewModel */,
 				FE4037AA2D312416008D4D0D /* Assets.xcassets */,
 				FE4037AC2D312416008D4D0D /* LaunchScreen.storyboard */,
 				FE4037AF2D312416008D4D0D /* Info.plist */,
@@ -137,7 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE2083642D326DAC002ECC3B /* FolderViewModel.swift in Sources */,
 				FE4037A32D312412008D4D0D /* ViewController.swift in Sources */,
+				FE2083682D32FC88002ECC3B /* FolderColors.swift in Sources */,
+				FE20836C2D343047002ECC3B /* CoreDataStack.swift in Sources */,
+				FE2083662D326E50002ECC3B /* FolderCollectionViewCell.swift in Sources */,
+				FE20836A2D33089A002ECC3B /* FolderContentsViewController.swift in Sources */,
 				FE40379F2D312412008D4D0D /* AppDelegate.swift in Sources */,
 				FE4037A12D312412008D4D0D /* SceneDelegate.swift in Sources */,
 				FE4037A92D312412008D4D0D /* OfflineFilesApp.xcdatamodeld in Sources */,
